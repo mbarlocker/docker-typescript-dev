@@ -1,6 +1,5 @@
 # Docker Typescript Dev
 
-[![Docker Compose Actions Workflow](https://github.com/mbarlocker/docker-typescript-dev/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mbarlocker/docker-typescript-dev/actions/workflows/docker-image.yml)
 [![Docker Image Publish](https://github.com/mbarlocker/docker-typescript-dev/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/mbarlocker/docker-typescript-dev/actions/workflows/docker-publish.yml)
 
 ## Contents
