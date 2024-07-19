@@ -1,8 +1,9 @@
 FROM ubuntu:22.04
 
 ENV TZ="UTC"
+ARG DEBIAN_FRONTEND=noninteractive
 
-RUN DEBIAN_FRONTEND=noninteractive apt update && apt install -y ca-certificates curl rsync \
+RUN apt update && apt install -y ca-certificates curl rsync \
     && rm -rf /var/lib/apt/lists/ \
     && groupadd app \
     && useradd --gid app --shell /bin/bash --create-home app \
