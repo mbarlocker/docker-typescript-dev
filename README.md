@@ -46,7 +46,7 @@ Finally, use `docker` or `docker compose` to put everything in place. This `dock
 ```yaml
 services:
   myapp:
-    image: mbarlocker/docker-typescript-dev:0.0.0
+    image: mbarlocker/docker-typescript-dev:latest
     environment:
       DOCKER_UID: "${DOCKER_UID}"
       DOCKER_GID: "${DOCKER_GID}"
