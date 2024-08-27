@@ -6,9 +6,9 @@
 
 This repo builds a Docker container. The purpose of this container is to develop on a local machine with Node.
 
-One thing that makes this container special is that it takes care to preserve ownership and permissions
-between the host and the container. If you're developing as myuser (uid 1000 gid 1000), the container
-will use the same uid and gid. This means no weird ownership or permission issues.
+Based on [Docker Dev](https://hub.docker.com/r/mbarlocker/docker-dev).
+
+This image installs nvm, but will not run your app.
 
 ## Usage
 
@@ -52,7 +52,7 @@ services:
       DOCKER_GID: "${DOCKER_GID}"
     volumes:
       - .:/app
-      - ./start.sh:/entry-app.sh
+      - ./999-start:/startup/app/
       - $HOME/.aws:/home/app/.aws
 ```
 
