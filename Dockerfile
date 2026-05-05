@@ -1,4 +1,4 @@
-FROM mbarlocker/docker-dev:v0.0.2
+FROM mbarlocker/docker-dev:v0.0.3
 
 RUN curl -o /opt/install-nvm.sh "https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh" \
     && chmod +x /opt/install-nvm.sh \
